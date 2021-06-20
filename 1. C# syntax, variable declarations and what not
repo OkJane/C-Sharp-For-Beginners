@@ -1,0 +1,41 @@
+using System;
+
+namespace 1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //Variable Declaration and Assingnment
+            int num1, num2;
+            string name;
+            name = "OkJane";
+            num1 = 3;
+            num2 = 5;
+            
+            //Output 
+            Console.WriteLine("Hello World! My name is {0}. My two favourite numbers are {1} and {2}", name, num1, num2);
+            
+            //Input...From User
+            int num;
+            string name2;
+            Console.WriteLine("What is your name?");
+            name2 = Console.ReadLine();
+            Console.WriteLine("Enter your favourite number: ");
+            num = Convert.ToInt32(Console.ReadLine());
+            
+            // C sharp reads in input as strings, so we have to convert to the appropriate data type
+            
+             //Operations in C#
+            int sum = num1 + num2;
+            int difference = num1 - num2;
+            int remainder = num1 % num2;
+            int product = num1 * num2;
+            int division = num / num2;
+            int num1_increment = num1++;
+            int num2_decrement = num2--;
+
+
+        }
+    }
+}
